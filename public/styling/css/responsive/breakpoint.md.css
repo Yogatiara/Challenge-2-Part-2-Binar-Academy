@@ -1,0 +1,429 @@
+@media only screen and (min-width: 768px) {
+  .navbar-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #banner-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .button-rental {
+    margin-left: 50px;
+  }
+
+  .banner {
+    height: 751px;
+  }
+
+  .bg-car {
+    height: 224px;
+  }
+
+  .car-image {
+    width: 717px;
+  }
+
+  .img-service {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 160px;
+    padding-right: 160px;
+    min-width: 300px;
+  }
+
+  .service-text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .service h2 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .service ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .service p {
+    text-align: justify;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 11px;
+  }
+
+  .service-list img {
+    width: 19px;
+  }
+
+  .service-list p {
+    margin-top: 6px;
+    font-weight: 100;
+    font-size: 10px;
+  }
+  .why-us ul {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .why-us-title {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .carousel {
+    margin: 50px;
+  }
+
+  .star img {
+    width: 27px;
+  }
+
+  .rental-car-card {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .font-button-card {
+    font-size: 17px;
+    width: 160px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .FAQ {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .banner {
+    height: 254px;
+  }
+  .service-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .img-service {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 300px;
+  }
+
+  .service {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-direction: row;
+    gap: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  /* .text-and-button {
+    margin-top: ;
+  } */
+
+  .banner h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .banner p {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .button-rental {
+    font-size: 11px;
+    width: 107px;
+    margin-top: 16px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #banner-text {
+    padding-right: 20px;
+  }
+
+  .car-image {
+    margin-top: 10px;
+    height: 0;
+    width: 1000px;
+  }
+
+  .bg-car {
+    margin-top: 99px;
+    height: 145px;
+  }
+}
+
+@media only screen and (min-width: 777px) {
+  .banner {
+    height: 257px;
+  }
+
+  .bg-car {
+    margin-top: 101px;
+    height: 146px;
+  }
+}
+
+@media only screen and (min-width: 813px) {
+  .banner {
+    height: 265px;
+  }
+
+  .bg-car {
+    margin-top: 107px;
+    height: 148px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .banner {
+    height: 278px;
+  }
+
+  .bg-car {
+    margin-top: 107px;
+    height: 160px;
+  }
+
+  .img-service {
+    width: 350px;
+  }
+
+  .service-text {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .caraousel-content {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+@media only screen and (min-width: 906px) {
+  .banner {
+    height: 327px;
+  }
+
+  .bg-car {
+    margin-top: 128px;
+    height: 169px;
+  }
+
+  .navbar-content {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  #banner-text {
+    padding-left: 70px;
+  }
+
+  .button-rental {
+    margin-left: 70px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .banner p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .button-rental {
+    margin-top: 15px;
+  }
+
+  .car-image {
+    width: 1300px;
+    margin-top: 30px;
+  }
+
+  .text-and-button {
+    padding-top: 20px;
+  }
+
+  .rental-car-card {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .FAQ {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  .banner {
+    height: 342px;
+  }
+
+  .bg-car {
+    margin-top: 143px;
+    height: 169px;
+  }
+
+  .car-image {
+    width: 1300px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .banner {
+    height: 325px;
+  }
+
+  .bg-car {
+    margin-top: 125px;
+    height: 169px;
+  }
+
+  .img-service {
+    width: 400px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .service h2 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .service ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .service p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .service-list img {
+    width: 19px;
+  }
+
+  .service-list p {
+    margin-top: 3px;
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .profile-testi,
+  .star {
+    display: flex;
+    justify-content: start;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .caraousel-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .caraousel-content p {
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  .profile-testi {
+    margin-top: 80%;
+  }
+}
+
+@media only screen and (min-width: 985px) {
+  .banner {
+    height: 350px;
+  }
+
+  .bg-car {
+    margin-top: 140px;
+    height: 180px;
+  }
+
+  .service {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .img-service {
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .service p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+
+  .service-list img {
+    width: 19px;
+  }
+
+  .service-list p {
+    font-weight: 100;
+    font-size: 13px;
+  }
+
+  .service h2 {
+    font-size: 23px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .img-service {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .service-text {
+    padding-top: 40px;
+  }
+
+  .caraousel-content {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .carousel {
+    background-color: #f1f3ff;
+    margin: 90px;
+    margin-top: 50px;
+  }
+
+  .rental-car-card {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
