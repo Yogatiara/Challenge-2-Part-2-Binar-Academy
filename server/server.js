@@ -5,17 +5,17 @@ const url = require("url");
 const PORT = 3000;
 const HOST = "localhost"; const HOST_URL = `http://${HOST}:${PORT}`
 
-const PUBLIC_DIRECTORY = path.join(__dirname, "../public/pages");
+const PUBLIC_DIRECTORY = path.join(__dirname, "../public");
 
 
 http.createServer((req, res) => {
 
   switch (req.url) {
     case "/":
-      req.url = "/landingPage.html";
+      req.url = "/pages/landingPage.html";
       break;
     case "/find-car":
-      req.url = '/cars.html'
+      req.url = '/pages/cars.html'
       break;
     default:
       req.url = req.url;
