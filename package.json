@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/server.js"
   },
   "dependencies": {
     "nodemon": "^3.0.1"

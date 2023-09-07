@@ -1,0 +1,49 @@
+const http = require('http');
+const fs = require('fs');
+const path = require("path");
+const url = require("url");
+const PORT = 3000;
+const HOST = "localhost"; const HOST_URL = `http://${HOST}:${PORT}`
+
+const PUBLIC_DIRECTORY = path.join(__dirname, "../public/pages");
+
+
+http.createServer((req, res) => {
+
+  switch (req.url) {
+    case "/":
+      req.url = "/landingPage.html";
+      break;
+    case "/find-car":
+      req.url = '/cars.html'
+      break;
+    default:
+      req.url = req.url;
+
+  }
+  const parseURL = url.parse(req.url);
+  const pathName = `${parseURL.pathname}`;
+  const extension = path.parse(pathName).ext;
+  const absolutePath = path.join(PUBLIC_DIRECTORY, pathName);
+
+  const contentTypes = {
+    ".css": "text/css",
+    ".png": "image/png",
+    ".svg": "image/svg+xml",
+    ".html": "text/html",
+    ".js": "text/javascript",
+  };
+
+  fs.readFile(absolutePath, (err, data) => {
+    if (err) {
+      res.statusCode = 500;
+      res.end("File not found ...");
+    } else {
+      res.setHeader("Content-Type", contentTypes[extension] || "text/plain");
+      res.end(data);
+    }
+  });
+}
+).listen(PORT);
+
+console.log(`Localhost is running : ${HOST_URL}`)
