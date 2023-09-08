@@ -14,8 +14,8 @@ http.createServer((req, res) => {
     case "/":
       req.url = "/pages/landingPage.html";
       break;
-    case "/find-car":
-      req.url = '/pages/cars.html'
+    case "/cars":
+      req.url = '/pages/findCar.html'
       break;
     default:
       req.url = req.url;
@@ -36,8 +36,8 @@ http.createServer((req, res) => {
 
   fs.readFile(absolutePath, (err, data) => {
     if (err) {
-      res.statusCode = 500;
-      res.end("File not found ...");
+      res.statusCode = 404;
+      res.end("File not found");
     } else {
       res.setHeader("Content-Type", contentTypes[extension] || "text/plain");
       res.end(data);

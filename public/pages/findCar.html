@@ -3,9 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BCR - Binar Car Rental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../styling/style.css" />
+    <link rel="stylesheet" href="../styling/responsive/breakpoint.ls.css" />
+    <link rel="stylesheet" href="../styling/responsive/breakpoint.md.css" />
+    <link rel="stylesheet" href="../styling/responsive/breakpoint.lg.css" />
+    <link rel="stylesheet" href="../styling/responsive/breakpoint.xl.css" />
   </head>
   <body>
-    <p>Ini halaman cari mobil</p>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top">
+      <div class="container-fluid navbar-content my-1 px-0">
+        <a href="#"> <div class="logo"></div> </a>
+        <a class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <img src="../assets/icon/fi_menu.png" alt="" />
+        </a>
+        <div id="navbarNav">
+          <ul class="navbar-nav navbar-ul">
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Our Servis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyUs">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li>
+              <button class="rounded-1 button nav-button" type="button">
+                <h6 class="fw-bold font-button button-register">Register</h6>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- sidebar(left) -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header mx-1">
+            <h6 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">BCR</h6>
+            <a type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+          </div>
+
+          <div class="offcanvas-body mx-1">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-normal">
+              <li class="nav-item" tabindex="1">
+                <a class="nav-link" aria-current="page" href="#service">Our Service</a>
+              </li>
+              <li class="nav-item" tabindex="2">
+                <a class="nav-link" href="#whyUs">Why Us</a>
+              </li>
+              <li class="nav-item" tabindex="3">
+                <a class="nav-link" href="#testimonial">Testimony</a>
+              </li>
+              <li class="nav-item" tabindex="4">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item" tabindex="5">
+                <button class="rounded-1 button" type="button">
+                  <h6 class="fw-bold font-button button-register">Register</h6>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <!-- Baner -->
+      <div class="banner">
+        <div class="banner-content flex-box-col">
+          <div class="text-and-button my-md-5">
+            <div id="banner-text">
+              <h1>Sewa & Rental Mobil Terbaik di kawasan Karang Joang</h1>
+              <div class="paragraf-banner">
+                <p class="fw-light">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+              </div>
+            </div>
+          </div>
+          <!-- car image -->
+          <div class="car-image position-relative">
+            <img class="position-absolute z-0" src="../assets/picture/Mercedes_Car.png" alt="Mecerdes Car" id="mercedes-car" />
+
+            <div class="bg-car rounded-top-left-1"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- car filter -->
+    <section class="car-filter z-3 position-absolute top-56 start-50 translate-middle rounded-2">
+      <div class="p-4 shadow rounded-2">
+        <ul class="flex-box-row p-0 gap-4">
+          <li class="navbar-nav w-25">
+            <label>Tipe Driver</label>
+            <select class="form-select mt-2 focus-ring" aria-label="Default select example" id="tipeDriver">
+              <option option="false" selected>Plih tipe driver &nbsp; &nbsp;</option>
+
+              <option value="true">Dengan Supir</option>
+              <option value="false">Tanpa Supir (Lepas Kunci)</option>
+            </select>
+          </li>
+
+          <li class="w-25 navbar-nav">
+            <div>
+              <label>Tanggal</label>
+              <input type="date" class="form-control mt-2" placeholder="Pilih Tanggal" id="tanggal" />
+            </div>
+          </li>
+
+          <li class="navbar-nav w-25 search__time">
+            <labe>Waktu Jemput/Ambil</labe>
+            <select class="form-select mt-2" aria-label="Default select example" id="waktuJemput">
+              <option value="false" selected>Pilih Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+
+              <option value="08:00">08.00 WIB</option>
+              <option value="09:00">09.00 WIB</option>
+              <option value="10:00">10.00 WIB</option>
+              <option value="11:00">11.00 WIB</option>
+              <option value="12:00">12.00 WIB</option>
+            </select>
+          </li>
+
+          <li class="navbar-nav w-25">
+            <label class="fw-light">Jumlah Penumpang (optional)</label>
+            <div class="input-group mt-2">
+              <input type="search" class="form-control border-end-0" placeholder="Jumlah Penumpang" id="jumlahPenumpang" value="0" />
+              <span class="input-group-text bg-white">
+                <img src="../assets/icon/fi_users.png" width="20px" alt="" />
+              </span>
+            </div>
+          </li>
+
+          <div class="col-lg-2 col-xl-auto col-md-2 margin-top-button-find-car">
+            <button class="button button-find-car text-white rounded-1 my-auto" id="load-btn">Cari Mobil</button>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cars margin-top-car-list">
+      <div class="card-car">
+        <div class="row-cols-3 row gap-4">
+          <div class="card col shadow-sm" style="width: 483px">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="footer">
+      <address>
+        <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+        <p>binarcarrental@gmail.com</p>
+        <p id="no-tlp">081-233-334-808</p>
+      </address>
+
+      <ul class="footer-nav navbar-nav fw-bold">
+        <li class="nav-item-footer">
+          <a class="nav-link fs-6" href="#">Our Servis</a>
+        </li>
+        <li class="nav-item-footer">
+          <a class="nav-link fs-6" href="#">Why Us</a>
+        </li>
+        <li class="nav-item-footer">
+          <a class="nav-link fs-6" href="#">Testimonial</a>
+        </li>
+        <li id="faq" class="nav-item-footer">
+          <a class="nav-link fs-6" href="#">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="social-media">
+        <h6 class="mb-3">Connect with us</h6>
+
+        <ul class="navbar-nav flex-row gap-3">
+          <li>
+            <img src="../assets/icon/icon_facebook.png" alt="facebook" />
+          </li>
+
+          <li>
+            <img src="../assets/icon/icon_instagram.png" alt="instagram" />
+          </li>
+
+          <li>
+            <img src="../assets/icon/icon_twitter.png" alt="instagram" />
+          </li>
+
+          <li>
+            <img src="../assets/icon/icon_mail.png" alt="email" />
+          </li>
+
+          <li>
+            <img src="../assets/icon/icon_twitch.png" alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="mb-3">Copyright Binar 2023</h6>
+        <div class="logo"></div>
+      </div>
+    </div>
+    <!-- <script src="../styling/bootstrap/js/bootstrap.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js " integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js " integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
   </body>
 </html>
