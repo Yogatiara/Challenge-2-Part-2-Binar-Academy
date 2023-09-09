@@ -41,12 +41,28 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+        <img src="${this.image}" class="card-img-top h-50" alt="car-image" />
+        <div class="flex-box-col card-body mt-3 gap-3">
+          <h5 class="card-title fw-normal fs-6">${this.manufacture}/${this.model}</h5>
+          <h5 class="fw-bold">Rp  ${this.rentPerDay}  / hari</h5>
+          <p class="card-text desc-card">
+            ${this.description}
+          </p>
+
+          <ul class="icon-list-card">
+            <li>
+              <p><img class="icon-card" src="../assets/icon/fi_users.png" alt="people image" /><span class="fw-light fs-6">${this.capacity} orang</span></p>
+            </li>
+            <li>
+              <p><img class="icon-card" src="../assets/icon/fi_settings.png" alt="people image" /><span class="fw-light fs-6"> ${this.transmission}</span></p>
+            </li>
+            <li>
+              <p><img class="icon-card" src="../assets/icon/fi_calendar.png" alt="people image" /><span class="fw-light fs-6">Tahun ${this.year}</span></p>
+            </li>
+          </ul>
+          <a href="#" class="btn button text-white py-3 fs-5">Pilih Mobil</a>
+        </div>
+      
     `;
   }
 }

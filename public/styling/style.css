@@ -7,6 +7,10 @@ body {
   font-family: Helvetica;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .flex-box-col {
   display: flex;
   flex-direction: column;
@@ -369,6 +373,31 @@ address {
 }
 
 .card-car {
-  margin-left: 215px;
-  margin-right: 215px;
+  margin-left: 200px;
+}
+
+.icon-card {
+  width: 25px;
+}
+
+.icon-list-card {
+  padding-left: 0;
+}
+
+.card-car span {
+  margin-left: 12px;
+}
+
+.card-size {
+  width: 484px;
+  height: 850px;
+}
+
+/* .car-image {
+  width: 400px;
+} */
+
+.desc-card {
+  line-height: 20px;
+  height: 50px;
 }
